@@ -1,0 +1,10 @@
+1.sql SELECT first_name FROM persons WHERE city='Omaha';
+2.sql SELECT last_name,first_name FROM persons WHERE age<30 ORDER BY last_name;
+3.sql SELECT last_name, first_name FROM persons WHERE gender='Female' AND title='Rev' ORDER BY last_name;
+4.sql SELECT last_name, first_name FROM persons WHERE age = (SELECT MIN(age) FROM persons);
+5.sql SELECT first_name FROM persons WHERE last_name LIKE 'Smith%';
+6.sql SELECT DISTINCT SUBSTR(email, INSTR(email, '@') + 1) AS email_domain FROM persons WHERE city = 'Seattle';
+7.sql UPDATE persons SET city = 'Tulsa' WHERE city = 'Sacramento';
+8.sql UPDATE persons SET age=18 WHERE address LIKE '%Street';
+9.sql DELETE FROM persons WHERE city IN ('Kansas City', 'Pittsburgh', 'Jacksonville');
+10.sql INSERT INTO persons (first_name, last_name, email, gender, title, age, address, city, state, postalcode, phone) VALUES ('Katherine', 'Wei', 'jwei7@uw.edu', 'Female', 'Miss', '18', 'Flower AVE NE', 'Seattle', 'WA', '98105', '12345567890');
