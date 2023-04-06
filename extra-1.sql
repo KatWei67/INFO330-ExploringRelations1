@@ -2,4 +2,4 @@ SELECT age FROM persons WHERE gender = 'Female' AND city = 'West Palm Beach' AND
 
 SELECT age FROM persons WHERE gender = 'Male' AND city = 'Phoenix' AND state = 'Arizona' AND title = 'Rev';
 
-/* No, they have different age.
+-- No, they have different age.
